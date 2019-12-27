@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Capabilities xmlns="http://www.opengis.net/wmts/1.0" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wmts/1.0 http://schemas.opengis.net/wmts/1.0/wmtsGetCapabilities_response.xsd" version="1.0.0">
+    <ows:ServiceIdentification>
+        <ows:Title>GEMEINDEABFRAGE_10m</ows:Title>
+        <ows:Keywords>
+            <ows:Keyword>gpsinfo</ows:Keyword>
+        </ows:Keywords>
+        <ows:ServiceType>OGC WMTS</ows:ServiceType>
+        <ows:ServiceTypeVersion>2.0</ows:ServiceTypeVersion>
+        <ows:Fees>none</ows:Fees>
+        <ows:AccessConstraints>https://creativecommons.org/licenses/by/4.0/</ows:AccessConstraints>
+    </ows:ServiceIdentification>
+    <ows:ServiceProvider>
+        <ows:ProviderName>Rechenraum GmbH</ows:ProviderName>
+        <ows:ProviderSite xlink:href="https://www.rechenraum.com"/>
+        <ows:ServiceContact>
+            <ows:ContactInfo>
+                <ows:Address>
+                    <ows:City>Vienna</ows:City>
+                    <ows:Country>Austria</ows:Country>
+                    <ows:ElectronicMailAddress>office@rechenraum.com</ows:ElectronicMailAddress>
+                </ows:Address>
+            </ows:ContactInfo>
+        </ows:ServiceContact>
+    </ows:ServiceProvider>
+    <Contents>
+        <Layer>
+            <ows:Title>GEMEINDEABFRAGE_10m</ows:Title>
+            <ows:Abstract>Testservice DGM 0.5 m</ows:Abstract>
+            <ows:Identifier>GEMEINDEABFRAGE_10m</ows:Identifier>
+            <Style isDefault="true"/>
+            <Format>application/zip</Format>
+            <TileMatrixSetLink>
+                <TileMatrixSet>GEMEINDEABFRAGE_10m</TileMatrixSet>
+            </TileMatrixSetLink>
+            <ResourceURL format="application/zip" resourceType="tile" template="file://C:/Users/manfr/Documents/GitHub/gemeindeabfrage_tirol/GEMEINDEABFRAGE_10m/{TileCol}/{TileRow}.asc.zip"/>
+        </Layer>
+        <TileMatrixSet>
+            <ows:Title>GEMEINDEABFRAGE_10m</ows:Title>
+            <ows:Identifier>GEMEINDEABFRAGE_10m</ows:Identifier>
+            <ows:SupportedCRS>urn:ogc:def:crs:EPSG::31287</ows:SupportedCRS>
+            <TileMatrix>
+                <ows:Identifier>0</ows:Identifier>
+                <ScaleDenominator>3.5714285714e+04</ScaleDenominator>
+                <TopLeftCorner>1.4107094717e+05 4.4233739983e+05</TopLeftCorner>
+                <TileWidth>100</TileWidth>
+                <TileHeight>100</TileHeight>
+                <MatrixWidth>239</MatrixWidth>
+                <MatrixHeight>151</MatrixHeight>
+            </TileMatrix>
+        </TileMatrixSet>
+    </Contents>
+    <ServiceMetadataURL xlink:href="file://C:/Users/manfr/Documents/GitHub"/>
+</Capabilities>
